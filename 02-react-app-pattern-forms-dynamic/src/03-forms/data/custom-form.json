@@ -1,0 +1,45 @@
+[
+  {
+    "type": "input",
+    "name": "firstName",
+    "placeholder": "Camilo",
+    "label": "First Name",
+    "value": "",
+    "validations": [{ "type": "required" }, { "type": "minLength", "value": 5 }]
+  },
+  {
+    "type": "input",
+    "name": "lastName",
+    "placeholder": "Bolaños",
+    "label": "Last Name",
+    "value": "",
+    "validations": [{ "type": "required" }]
+  },
+  {
+    "type": "email",
+    "name": "email",
+    "placeholder": "camilo.bolanos@hotmail.com",
+    "label": "Email",
+    "value": "",
+    "validations": [{ "type": "required" }, { "type": "email" }]
+  },
+  {
+    "type": "select",
+    "name": "favoriteGame",
+    "label": "Favorite Game",
+    "options": [
+      {
+        "id": 1,
+        "label": "Super Smash"
+      },
+      {
+        "id": 2,
+        "label": "Metal Gear"
+      },
+      {
+        "id": 3,
+        "label": "Resident Evil"
+      }
+    ]
+  }
+]
