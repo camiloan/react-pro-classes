@@ -45,5 +45,5 @@ const manifest = {
  */
 
 export default defineConfig({
-  plugins: [react(), VitePWA(manifest)],
+  plugins: [react()],
 });

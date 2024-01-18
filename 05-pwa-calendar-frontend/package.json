@@ -5,9 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && yarn PWA",
     "preview": "vite preview",
-    "test": "jest --watchAll"
+    "test": "jest --watchAll",
+    "PWA": "workbox injectManifest workbox-config.cjs"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.3",
@@ -16,11 +17,12 @@
     "react": "^18.2.0",
     "react-big-calendar": "^1.6.9",
     "react-datepicker": "^4.10.0",
+    "react-detect-offline": "^2.4.5",
     "react-dom": "^18.2.0",
     "react-modal": "^3.16.1",
     "react-redux": "^8.0.5",
     "react-router-dom": "^6.9.0",
-    "sweetalert2": "^11.10.3"
+    "sweetalert2": "^11.6.13"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.21.4",
